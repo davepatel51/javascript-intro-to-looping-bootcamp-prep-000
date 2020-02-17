@@ -36,3 +36,21 @@ function doWhileLoop(num)  {
  }
 
 
+
+function doWhileLoop(num)  {
+   if(num>9) {
+      num = 9;
+   }
+
+   var i = 0; 
+
+  function incrementVariable() {
+    i++
+    return i;
+  }
+  do {
+    console.log("I run once regardless.");
+   }
+  while(incrementVariable() <= num);
+ }
+
